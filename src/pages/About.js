@@ -1,16 +1,17 @@
 import React, { Component, Fragment } from 'react';
 import Navigation from '../components/Navigation';
 
-class Home extends Component {
+class About extends Component {
     render() {
         return (
             <Fragment>
                 <header>
                     < Navigation />
                 </header>
+                <h1>About</h1>
             </Fragment>
         );
     }
 }
 
-export default Home;
+export default About;

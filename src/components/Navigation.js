@@ -6,39 +6,40 @@ function Navigation() {
         <Fragment>
             <nav>
                 <span>Photosen</span>
-                    <ul className="navig text-decoration-none">
-                        <li>
-                            <NavLink className="text-decoration-none " activeClassName="nav-active" to ="/" exact >
-                                Home
+                    <div className="navig text-decoration-none">
+                        <NavLink className="text-decoration-none " activeClassName="nav-active" to ="/" exact >
+                            Home
+                        </NavLink>
+                        <div className="dropdown">
+                        <button className="dropbtn">GALLERY 
+                        <i className="fa fa-caret-down ml-1"></i>
+                        </button>
+                        <div className="dropdown-content bg-light ">
+                            <NavLink className="text-decoration-none dropitem" activeClassName="nav-active" to ="/gallery1" exact>
+                                gallery 1
                             </NavLink>
-                        </li>
-                        <li>
-                            <NavLink className="text-decoration-none" activeClassName="nav-active" to ="/blog">
-                                Gallery
+                            <NavLink className="text-decoration-none dropitem" activeClassName="nav-active" to ="/gallery2" exact>
+                                gallery 2
                             </NavLink>
-                        </li>
-                        <li>
-                            <NavLink className="text-decoration-none" activeClassName="nav-active" to ="/services">
-                                Services
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink className="text-decoration-none" activeClassName="nav-active" to ="/about">
-                                About
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink className="text-decoration-none" activeClassName="nav-active" to ="/contact">
-                                Contact
-                            </NavLink>
-                        </li>
-                    </ul>
+                        </div>
+                        </div>
+
+                        <NavLink className="text-decoration-none" activeClassName="nav-active" to ="/service">
+                            Services
+                        </NavLink>
+                        <NavLink className="text-decoration-none" activeClassName="nav-active" to ="/about">
+                            About
+                        </NavLink>
+                        <NavLink className="text-decoration-none" activeClassName="nav-active" to ="/contact">
+                            Contact
+                        </NavLink>
+                    </div>
                     
                 <div className="reseaux">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-youtube"></i>
+                    <i className="fab fa-facebook-f"></i>
+                    <i className="fab fa-twitter"></i>
+                    <i className="fab fa-instagram"></i>
+                    <i className="fab fa-youtube"></i>
                 </div>
             </nav>        
         </Fragment>
