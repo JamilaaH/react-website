@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 
 function Gallery2() {
@@ -8,6 +9,7 @@ function Gallery2() {
                 < Navigation />
             </header>
             <h1>Gallery2</h1>
+            <Footer/>
         </Fragment>
     );
 }

@@ -1,0 +1,36 @@
+.galerie
+    .carte
+        position: relative
+        .box
+            overflow: hidden
+            img
+                -webkit-filter: grayscale(100%)
+                transition: all 1s ease 
+
+                &:hover
+                    -webkit-filter: grayscale(0%)
+        &:hover
+            img
+                transform: scale(1.2)
+
+        .caption
+            font-family: 'josefin'
+            color: white
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50% , -50%)
+            display: flex
+            flex-direction: column
+            align-items: center
+            .titre
+                font-size: 23px
+                text-transform: uppercase
+
+            .btn
+                color: white
+                border: 1px white solid
+
+                &:hover
+                    background-color: white
+                    color: black

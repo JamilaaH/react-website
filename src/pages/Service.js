@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 
 function Service() {
@@ -7,7 +8,12 @@ function Service() {
             <header>
             < Navigation />
             </header>
-            <h1>service</h1>
+            <section>
+                <div className="container">
+                    <h2 className="text-center text-light titre">My Services</h2>
+                </div>
+            </section>
+            <Footer/>
         </Fragment>
     );
 }

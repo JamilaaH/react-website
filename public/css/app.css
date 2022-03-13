@@ -3,10 +3,18 @@
   src: url("../fonts/JosefinSans-Regular.ttf");
 }
 
-body {
+#root {
   margin: 0;
   padding: 0;
   background-color: black;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: relative;
 }
 
 header nav {
@@ -89,4 +97,59 @@ header .dropdown-content .dropitem {
 
 header .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.galerie .carte {
+  position: relative;
+}
+
+.galerie .carte .box {
+  overflow: hidden;
+}
+
+.galerie .carte .box img {
+  -webkit-filter: grayscale(100%);
+  transition: all 1s ease;
+}
+
+.galerie .carte .box img:hover {
+  -webkit-filter: grayscale(0%);
+}
+
+.galerie .carte:hover img {
+  transform: scale(1.2);
+}
+
+.galerie .carte .caption {
+  font-family: 'josefin';
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galerie .carte .caption .titre {
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.galerie .carte .caption .btn {
+  color: white;
+  border: 1px white solid;
+}
+
+.galerie .carte .caption .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  background-color: black;
+  font-family: "josefin";
+  padding: 10px;
+  text-align: center;
 }
